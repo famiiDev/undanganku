@@ -1,0 +1,346 @@
+$bg-color: #eebed5;
+$bg-soft: #f7deeb;
+$select-color: #d14d8a;
+$primary-color: #c99b69;
+$button-color: #eaaeca;
+$soft-black: #474848;
+
+$normal-font: "Roboto slab", serif;
+$primary-font: "Roboto slab", serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.15em;
+}
+h1 {
+  font-size: 2em;
+}
+body {
+  margin: 0;
+  background-image: url("../img/gallery/ikhwanlaily.jpg");
+  background-size: 100%;
+  background-position-y: 35%;
+  font-family: "Lobster two", cursive !important;
+  background-attachment: fixed;
+}
+
+::selection {
+  color: #fff;
+  background: $select-color;
+}
+
+main {
+  .home {
+    color: white;
+    font-weight: lighter;
+    background: rgba($color: #000000, $alpha: 0.4);
+    display: grid;
+    place-items: center center;
+    h3 {
+      margin: 30px 0;
+    }
+    .title {
+      text-align: center;
+      h2,
+      h1 {
+        margin: 0;
+      }
+      h1.nama {
+        font-size: 3em;
+      }
+      h3 {
+        font-family: "Roboto slab";
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center center;
+  gap: 10px;
+  .item {
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-content: center center;
+    h1 {
+      font-weight: lighter !important;
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+}
+section {
+  padding: 40px 0;
+  background: $bg-soft;
+  place-content: center center;
+  place-items: center center;
+  color: $soft-black;
+  .header {
+    // padding-top: 30px;/*  */
+    text-align: center;
+    h1 {
+      font-size: 2.5em;
+    }
+    img {
+      margin-top: 10px;
+      width: 250px;
+    }
+  }
+  .content {
+    margin: 30px auto;
+    font-family: $normal-font;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.content.event {
+  display: grid;
+  grid-template-columns: 400px;
+  place-content: center center;
+  margin-bottom: 0;
+  .event-box {
+    box-shadow: 0 0 70px 0 rgba(108, 138, 150, 0.12);
+    background: #fff;
+    padding: 50px 30px;
+    h1 {
+      font-weight: lighter;
+    }
+
+    .line {
+      display: inline-block;
+      content: "";
+      border-top: 0.1rem solid $select-color;
+      width: 12rem;
+      margin: 0 1rem;
+      transform: translateY(-1rem);
+    }
+    .img-container {
+      padding: 20px 0;
+      width: 100%;
+      img {
+        width: 75px;
+      }
+    }
+    .event-details {
+      p {
+        margin: 0;
+      }
+      .button {
+        margin: 20px auto;
+        background: $button-color;
+        padding: 10px 30px;
+        width: fit-content;
+        border-radius: 20px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          span {
+            margin-right: 10px;
+          }
+        }
+        a:visited {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.couples {
+  // padding: 40px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto 150px 150px auto;
+  gap: 20px;
+  .photo {
+    grid-row: 1;
+    img {
+      width: 100%;
+    }
+  }
+  .details {
+    grid-row: 1;
+    font-family: $normal-font;
+    display: grid;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1em;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+    h1,
+    h3,
+    h4 {
+      font-weight: normal;
+    }
+  }
+  .details.boy {
+    grid-column: 1;
+    text-align: right;
+  }
+  .photo.boy {
+    grid-column: 2;
+  }
+  .photo.girl {
+    grid-column: 3;
+  }
+  .details.girl {
+    grid-column: 4;
+  }
+}
+.fix {
+  clear: both;
+}
+
+.float-button:hover {
+  cursor: pointer;
+}
+
+.float-button {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background: $button-color;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  color: #fff;
+  display: grid;
+  place-content: center center;
+  span {
+    font-size: 1.5em;
+  }
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
+.gallery-carousel {
+  max-height: 500px;
+  overflow: hidden;
+  .carousel-inner {
+    .carousel-item {
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-position-x: center;
+    }
+    .carousel-item.img-1 {
+      background-position-y: 50%;
+    }
+    .carousel-item.img-2 {
+      background-position-y: 30%;
+    }
+    .carousel-item.img-3 {
+      background-position-y: 30%;
+    }
+    .carousel-item.img-4 {
+      background-position-y: 50%;
+    }
+    .carousel-item.img-5 {
+      background-position-y: 50%;
+    }
+  }
+}
+footer {
+  padding: 25px;
+  background-color: $button-color;
+  p {
+    text-align: right;
+    color: #fff;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+  .couples {
+    grid-template-columns: 1fr;
+    .photo {
+      grid-column: 1 !important;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    .details {
+      grid-column: 1 !important;
+      text-align: center !important;
+    }
+    .photo.boy {
+      grid-row: 1;
+    }
+    .details.boy {
+      grid-row: 2;
+    }
+    .details.girl {
+      grid-row: 4;
+    }
+    .photo.girl {
+      grid-row: 3;
+    }
+  }
+  .countdown {
+    .item {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  .float-button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .content.event {
+    grid-template-columns: 100%;
+    width: 90%;
+  }
+  .gallery-carousel {
+    height: 480px;
+    .carousel-inner {
+      .carousel-item {
+        background-position-y: center;
+        background-position-x: center;
+      }
+      .carousel-item.img-1 {
+        background-position-x: 55%;
+      }
+      .carousel-item.img-4 {
+        background-position-x: 55%;
+      }
+    }
+  }
+  footer {
+    p {
+      text-align: center;
+    }
+  }
+}

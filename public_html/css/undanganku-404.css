@@ -1,0 +1,69 @@
+body {
+  background: #eebed5;
+  font-family: "Roboto slab", serif;
+}
+
+main.fullscreen {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  place-items: center center;
+}
+
+main.fullscreen .error-sign {
+  font-family: "Lobster two";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 120px auto;
+      grid-template-columns: auto 120px auto;
+  -ms-grid-rows: 120px;
+      grid-template-rows: 120px;
+  place-items: center;
+}
+
+main.fullscreen .error-sign .item {
+  width: 100%;
+}
+
+main.fullscreen .error-sign .item img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+main.fullscreen .error-sign .item:first-child {
+  text-align: right;
+}
+
+main.fullscreen .error-sign .item:last-child {
+  text-align: left;
+}
+
+main.fullscreen .error-sign h1 {
+  color: #fd4755;
+  font-size: 7em;
+  text-shadow: 2px 2px #fb2b3a;
+}
+
+main.fullscreen .error-desc {
+  text-align: center;
+}
+
+main.fullscreen .error-desc a {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .error-sign {
+    -ms-grid-columns: auto 80px auto !important;
+        grid-template-columns: auto 80px auto !important;
+    -ms-grid-rows: 80px !important;
+        grid-template-rows: 80px !important;
+  }
+  .error-sign h1 {
+    font-size: 5em !important;
+  }
+}
+/*# sourceMappingURL=undanganku-404.css.map */

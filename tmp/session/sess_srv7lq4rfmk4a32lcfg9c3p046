@@ -1,0 +1,17 @@
+ip_user|s:12:"114.5.248.34";username|s:8:"fameapps";token|s:40:"85b08f0f85267c54446e32790caad9cb6efa7101";tokengui|s:20:"cwp_5e5bdce69eecc09c";tokenuser|s:45:"80cc2558186cecc767a91d58f8a88154:lNR6BYagLqk=";general|a:17:{s:6:"status";s:2:"OK";s:6:"domain";s:16:"fame-apps.web.id";s:5:"email";s:18:"fame1302@gmail.com";s:12:"package_name";s:14:"Hosting-Gratis";s:10:"ip_address";s:14:"103.112.244.90";s:8:"reseller";s:0:"";s:10:"setup_date";s:19:"2020-10-29 06:30:53";s:10:"package_id";s:1:"2";s:11:"last_access";s:19:"0000-00-00 00:00:00";s:8:"cryptpwd";i:1;s:14:"domainreseller";s:0:"";s:9:"viewtheme";i:1;s:9:"bandwidth";s:4:"1646";s:14:"pack_bandwidth";s:10:"1000000000";s:5:"quote";s:282:"{
+    "status": "active",
+    "username": "fameapps",
+    "user_status": "--",
+    "space_used": "25116",
+    "space_soft": "256000",
+    "space_hard": "256000",
+    "space_grace": "0",
+    "inode_used": "1272",
+    "inode_soft": "0",
+    "inode_hard": "0",
+    "inode_grace": "0"
+}";s:8:"hostname";s:27:"newpinwheel.indowebsite.net";s:9:"compbandw";i:0;}swuser|i:1;pmauser|s:21:"0uhJPWO9wKgb0/0/DQs=
+";versioncwp|s:42:"<?php
+$webpanel_version = "0.9.8.1022";
+?>";sess_pma|s:21:"0uhJPWO9wKgb0/0/DQs=
+";license|i:1;myip|s:12:"114.5.248.34";

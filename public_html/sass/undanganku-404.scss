@@ -1,0 +1,64 @@
+$bg-color: #eebed5;
+$button-color: #eaaeca;
+$bg-soft: #f7deeb;
+$select-color: #d14d8a;
+$primary-color: #c99b69;
+$soft-black: #474848;
+$normal-font: "Roboto slab", serif;
+$primary-font: "Lobster two";
+
+body {
+  background: $bg-color;
+  font-family: $normal-font;
+}
+
+main.fullscreen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center center;
+
+  .error-sign {
+    font-family: $primary-font;
+    display: grid;
+    grid-template-columns: auto 120px auto;
+    grid-template-rows: 120px;
+    place-items: center;
+    .item {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    .item:first-child {
+      text-align: right;
+    }
+    .item:last-child {
+      text-align: left;
+    }
+    h1 {
+      color: #fd4755;
+      font-size: 7em;
+      text-shadow: 2px 2px #fb2b3a;
+    }
+  }
+
+  .error-desc {
+    text-align: center;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .error-sign {
+    grid-template-columns: auto 80px auto !important;
+    grid-template-rows: 80px !important;
+
+    h1 {
+      font-size: 5em !important;
+    }
+  }
+}
